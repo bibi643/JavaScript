@@ -30,15 +30,17 @@ Every time you change th
 ```
 
 We can see the different opening and closing tags.
-- <body></body>
-- <html></html>
+```html
+<body></body>
+<html></html>
+```
 
 When we want to *write a script* we  use **<script type="text/javascript">**.
 
 # console
 
 Console is not visible by the user on the web browzer. Not intereact with the html part of the script
-- console.log("Hello World");
+- console.log("Hello World"); means to print hello world in the console.
 - console.warn("wARNING!!!");
 - console.error("This is an error");
 
