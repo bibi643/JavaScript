@@ -1,8 +1,10 @@
 # Modifying HTML Elements
 
-Here we want to modify the <h1>, so we can add an id.
+We can add an id inside the header tag to identify specifically this tag.
+```html
 <h1 id="header">Hello</h1>
-If I want to reference  the h1 I will use the document and not the console.
+```
+If I want to modify  the value inside the a specific tag I will use the document and not the console and the function **innerHTML**.
 
 *document.getElementById("header").innerHTML = whatever_you_want*
 
