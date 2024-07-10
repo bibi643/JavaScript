@@ -47,6 +47,7 @@ To see the console, right click and Inspect and console.
 
 # document
 To write on the html document.
+**Document** is refering to the HTML document itself
 
 document.write("<h1>Hello</h1>");
 
