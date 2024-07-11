@@ -2,7 +2,9 @@
 
 ![Static Badge](https://img.shields.io/badge/JavaScript-yellow) 
 ![Static Badge](https://img.shields.io/badge/HTML-white)
-Javascript Tuto
+
+
+Javascript Tutorial.
 
 
 # Overview
