@@ -168,3 +168,158 @@ This means, **whatever the condition is, do {this} at least one time and THEN ch
 ```
 
 
+# For loop
+**Most common loops** in programming. You use it when you want to loop a specific amount of time.
+
+*General syntax*
+
+```html
+for(variable; condition; increment_step){}
+```
+
+
+```html
+<html>
+
+    <body>
+       <script>
+        for (var i = 0; i<10; i++){
+            console.log(i)
+            if (i==7){
+                break //this break the for loop when we reach 7
+            }
+        }
+
+       </script>
+
+    </body>
+
+</html>
+```
+
+## Loop in an array.
+We will create a function to look inside an array for a value and return true or false if the value is the one we want.
+
+```html
+<html>
+
+    <body>
+
+
+       <script>
+        function findArray(arr,value){
+            for (var i=0;i<arr.length;i++){
+                if(arr[i] == value){
+                    return true
+                }
+            }
+
+            return false
+
+
+
+        }
+        var arr = [1,2,4,5,"tim",true]
+        console.log(findArray(arr,5))
+    
+       </script>
+
+    </body>
+
+</html>
+```
+
+## Nested for loop
+
+We will write a function to print how many times a function ran.
+```html
+<html>
+
+    <body>
+
+
+       <script>
+        function findArray(arr,value){
+            for (var i=0;i<arr.length;i++){
+                if(arr[i] == value){
+                    return true
+                }
+            }
+
+            return false
+
+
+
+        }
+        var arr = [1,2,4,5,"tim",true]
+        console.log(findArray(arr,5))
+    
+        function nsquared(n){
+            for(var i=0;i<n;i++){
+                for (var j =0; j<n;j++){
+                    console.log("run")
+                }
+            }
+            
+        }
+
+        nsquared(5)
+       </script>
+            
+    </body>
+
+</html>
+```
+
+## For Of/For Each loops
+This is a way to iterate by **elements or items** rather than by *index*. This is the same phylosophie as python does the for loop.
+for(let **element** of array) means each element of the array on each loop will be assignated to the **element variable**.
+
+```html
+<html>
+
+    <body>
+
+
+       <script>
+        var arr = ["tim","joe","bill"]
+        console.log(arr)
+        for (let element of arr){
+            console.log(element)
+            element=5
+            console.log(element)
+        }
+        console.log(arr)
+       </script>
+            
+    </body>
+
+</html>
+```
+
+- Loop on a string.
+
+```html
+<html>
+
+    <body>
+
+
+       <script>
+        var x ="hello"
+        for(let letter of x){
+            console.log(letter)
+            
+        }
+       </script>
+            
+    </body>
+
+</html>
+```
+**Note**: In the console we will have:
+- h
+- e
+- l      **(2)**
+- o
+
